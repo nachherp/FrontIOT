@@ -1,0 +1,39 @@
+.sidebar {
+  width: 180px;
+  background-color: #0040a1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.logo {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+.nav-links li {
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-links li:hover {
+  background-color: #003688;
+}
+.nav-links li.active {
+  background-color: #002f6c;
+  font-weight: bold;
+}

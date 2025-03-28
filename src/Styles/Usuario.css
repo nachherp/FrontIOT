@@ -1,0 +1,122 @@
+
+.blur-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 5;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #f5a623, #f76b1c);
+  padding: 15px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+
+.menu {
+  position: absolute;
+  top: 70px;
+  left: -200px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  transition: left 0.3s ease-in-out;
+  z-index: 11;
+}
+
+.menu.open {
+  left: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background: #f5a623;
+}
+
+
+.profile-content {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  z-index: 6;
+}
+
+.profile-info,
+.sensor-info {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.profile-info h2,
+.sensor-info h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: #ffc300;
+}
+
+
+.profile-footer {
+  background: #1d1d1d;
+  color: white;
+  padding: px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
