@@ -1,45 +1,36 @@
-.dashboard-content {
-    flex: 1;
-    padding: 30px;
-    color: #000;
-    background-color: #f4f6f9;
-    min-height: 100vh;
-    overflow-y: auto;
-  }
-  
-  .dashboard-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #003688;
-  }
-  
-  .deleted-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  
-  .deleted-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .deleted-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  .deleted-card h3 {
-    margin-top: 0;
-    color: #0046ad;
-  }
-  
-  .deleted-card p {
-    margin: 6px 0;
-    font-size: 14px;
-    color: #444;
-  }
-  
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+}
+
+.deleted-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.deleted-table th,
+.deleted-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.deleted-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #333;
+}
+
+.deleted-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 16px;
+  color: #888;
+}
